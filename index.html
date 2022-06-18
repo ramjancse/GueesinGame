@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gueesing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Gueesing Game</div>
+
+      <div class="main">
+        <div class="leftSide">
+          <div class="panelText">
+            <span class=""> 1. Guess a number between 0-9. </span>
+          </div>
+          <div class="panelText">
+            <span class=""> 2. Maximum 5 Times. </span>
+          </div>
+          <div class="panelText">
+            3. You have Pressed <span id="clicked"> </span> times.
+          </div>
+          <div>
+            <form id="form">
+              <input
+                class="inputBox"
+                type="number"
+                placeholder="input number between 0-9"
+              />
+              <button class="button">Put your number</button>
+            </form>
+            <ul id="showRsult"></ul>
+          </div>
+        </div>
+        <div class="leftSide">
+          <div class="subHeader">Score</div>
+
+          <h2>
+            Number of correct Gueesing
+            <span id="correctGuesseCount" class="success"> 0 </span>
+          </h2>
+          <h2>
+            Number of Wrong Gueesing
+            <span id="wrongGuesseCount" class="danger"> 0 </span>
+          </h2>
+          <div class="" id="gameOver"></div>
+          <button class="button" id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
